@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Design & Development Course</title>
+    <link rel="stylesheet" href="section1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <div class="logo">BLESSING💥</div>
+          </div>
+          <ul class="navbar">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li>
+              <a href="#">SERVICE</a>
+              <ul class="dropdown">
+                <li><a href="#">HTML CLASS</a></li>
+                <li><a href="#">CSS CLASS</a></li>
+                <li><a href="#">JAVASCRIPT CLASS</a></li>
+              </ul>
+            </li>
+            <li><a href="#">DESIGN</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+          <div class="search-bar">
+            <input type="text" placeholder="Thanks for watching" />
+            <button>Search</button>
+          </div>
+          <label for="menu-bar" class="menu-bar">☰</label>
+        </nav>
+      </header>
+      <!-- Overlay -->
+      <div id="overlay" class="overlay">
+        <div class="overlay-content">
+          <span class="closebtn" id="closeOverlay">&times;</span>
+          <ul class="navbar-overlay">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li>
+              <a href="#">SERVICE</a>
+              <ul class="dropdown">
+                <li><a href="#">HTML CLASS</a></li>
+                <li><a href="#">CSS CLASS</a></li>
+                <li><a href="#">JAVASCRIPT CLASS</a></li>
+              </ul>
+            </li>
+            <li><a href="#">DESIGN</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <main>
+        <section class="hero">
+          <div class="content">
+            <h1>
+              Web Design & <br />
+              <span class="text-span">Development</span><br />
+              Course
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              neque expedita atque eveniet <br />quis nesciunt. Quos nulla vero
+              consequuntur, fugit nemo ad delectus <br />a quae totam ipsa illum
+              minus laudantium?
+            </p>
+            <button class="join-btn">JOIN US</button>
+          </div>
+
+
+          
+          <div class="login-form">
+            <h2>Login Here</h2>
+            <form id="loginForm">
+              <input type="text" id="loginUsername" placeholder="raas sadads" />
+              <p id="userNameErrorMessage">Username not valid!!</p>
+              <input
+                type="password"
+                id="loginPassword"
+                placeholder="***"
+              />
+              <p id="passwordErrorMessage">Password not valid!!</p>
+              <button type="submit" id="loginbtn"><b>Login</b></button>
+            </form>
+            <p class="account-text">
+              Don't have an account?<br />
+              <a href="signup.html"><span class="signup">Sign up</span> here</a>
+            </p>
+            <p class="login">Log in with</p>
+            <div class="social-icons">
+              <a href="#"
+                ><i class="fa fa-facebook-square" aria-hidden="true"></i
+              ></a>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="#"
+                ><i class="fa fa-twitter-square" aria-hidden="true"></i
+              ></a>
+              <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

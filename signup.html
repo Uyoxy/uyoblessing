@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/de9b151752.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(/wall.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            background-color: black;
+            width: 400px;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .header{
+            padding: 20px 30px;
+            text-align: center;
+            font-size: 20px;
+            background-color: orangered;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .form{
+            padding: 30px 40px;
+        }
+        .form-control{
+            padding: 20px;
+            position: relative;
+            margin-bottom: 5px;
+        }
+        .form-control label{
+            display: inline-block;
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: white;
+        }
+        .form-control label{
+            display: none;
+        }
+        .form-control input{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 17px;
+            border: 5px solid #f0f0f0;
+            border-radius: 10px;
+        }
+        #mylog{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        #mylog:hover{
+            background-color: transparent;
+            border: 1px dashed white;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            background-color: orangered;
+            border: none;
+            border-radius: 10px;
+        }
+        .btn2{
+            width: 60px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .btn2:hover{
+            color: transparent;
+        }
+        small{
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            visibility: hidden;
+        }
+        .form-control.success input{
+            border-color: green;
+        }
+        .form-control.error input{
+            border-color: red;
+        }
+        .form-control.error small{
+            color: red;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="btn2"><a href="index.html"> <i class="fa-solid fa-house" style="color: #ffffff;"></i></a></div>
+            <h2 id="header">Sign up Form</h2>
+        </div>
+        
+        <form class="form" id="form">
+            <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter Username Here">
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Email Here">
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password Here">
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <label for="password">Password check</label>
+            <input type="password" id="passwordcheck" placeholder="Confirm Password Here">
+            <small>Error message</small>
+        </div>
+        <button type="submit"><a href="index.html" id="mylog">Log in</a></button>
+        </form>
+    </div>
+   
+</body>
+<script src="script.js"></script>
+</html>

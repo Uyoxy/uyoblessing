@@ -1,0 +1,483 @@
+/* Global Reset */
+* {
+  ::after*,
+  ::before* {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* styles.css */
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  padding: 0px;
+  /* margin: 0% auto; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+
+  height: 100%;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(17, 17, 17, 0.5),
+      rgba(17, 17, 17, 0.5)
+    ),
+    url("/wall.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 900px;
+}
+main {
+  width: 100%;
+  /* height: 100vh; */
+}
+header {
+  /* padding: 10px 20px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0.8rem;
+  width: 100%;
+}
+.logo {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #f06f04;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+.menu-bar {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff7f00;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0px 0.6rem;
+}
+.menu-bar {
+  display: none;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background: #333;
+  top: 30px;
+  left: 0;
+  min-width: 100px;
+  list-style: none;
+  border-radius: 10px;
+}
+
+.dropdown li {
+  margin: 0;
+}
+
+.dropdown a {
+  display: block;
+  font-size: 10px;
+}
+
+.navbar li:hover .dropdown {
+  display: block;
+}
+
+.search-bar {
+  display: flex;
+  height: 41px;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+  border: 1px solid #ff7f00;
+}
+
+.search-bar input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 5px 15px;
+  background: #ff7f00;
+  height: 41px;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  color: #e5e2e2;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px 60px; */
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.content {
+  max-width: 60%;
+}
+.text-span {
+  color: #ff7f00;
+}
+
+.content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #ffff;
+}
+
+.content p {
+  margin: 20px 0;
+  line-height: 1.5;
+  color: #ffff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.join-btn {
+  padding: 10px 20px;
+  background: #ff7f00;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.login-form {
+  margin-top: 4.2rem;
+  background: rgba(0, 0, 0, 0.8);
+  /* margin-top: 70px; */
+  /* background-image: linear-gradient(
+      to bottom,
+      rgba(255, 123, 0, 0.5),
+      rgba(0, 123, 255, 0.5)
+    ),
+    url("asset/juji.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 200px;
+}
+
+.login-form h2 {
+  margin-top: 0;
+  text-align: center;
+  padding: 5px 0px;
+  background-color: #f1ebeb;
+  color: orange;
+  border-radius: 5px;
+}
+
+.login-form input {
+  display: block;
+  width: 98%;
+  line-height: 2;
+  margin: 10px 0px;
+  border: transparent;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  border-bottom: 0.5px solid #ff7f00;
+}
+
+input ::placeholder {
+  color: white;
+}
+
+.login-form button {
+  padding: 10px;
+  background: #ff7f00;
+  border: none;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+.account-text {
+  text-align: center;
+  color: #fff;
+}
+span {
+  color: #ff7f00;
+  margin-top: 1.2rem;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.login {
+  text-align: center;
+  color: #fff;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+}
+#userNameErrorMessage,
+#passwordErrorMessage,
+#userNameError,
+#emailError,
+#password1Error,
+#password2Error {
+  display: none;
+  color: red;
+  font-size: small;
+}
+
+.signup-form {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: auto;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 123, 0, 0.5),
+      rgba(0, 123, 255, 0.5)
+    ),
+    url("asset/juji.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 3.5rem;
+}
+/* Overlay styling */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(145, 142, 142, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(5px);
+}
+.signup:hover{
+  background-color: transparent;
+  border: 2px dashed white;
+
+}
+#loginbtn:hover{
+  background-color: transparent;
+  border: 2px dashed white;
+
+}
+.navbar a:hover {
+  border-bottom:3px solid #e5e2e2;
+}
+
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.overlay-content ul li {
+  padding: 10px 0;
+}
+.overlay li:hover .dropdown {
+  display: block;
+}
+
+.overlay-content ul li a {
+  color: #000;
+  font-size: 23px;
+  text-decoration: none;
+  display: block;
+}
+
+.overlay-content ul li a:hover,
+.overlay-content ul li a:focus {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: absolute;
+  top: -180px;
+  bottom: 300px;
+  right: 45px;
+  font-size: 60px;
+  color: white;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  color: #f1f1f1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 1500px ) and (max-width: 2540px) {
+  nav{
+    width: 100%;
+    padding: 0px 300px;
+  }
+  .hero{
+    padding: 0px 250px;
+    padding-right: 500px;
+    font-size: 20px;
+  }
+  .login-form{
+    width: 50%;
+    font-size: 25px;
+  }
+}
+@media (max-width: 785px) {
+  .overlay-content ul li a {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .overlay li:hover .dropdown {
+    display: block;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    background: #333;
+    top: 0;
+    left: 0;
+    min-width: 60px;
+    list-style: none;
+    border-radius: 10px;
+  }
+header{
+  width: 98%;
+  font-size: 9px;
+}
+  .search-bar {
+    display: block;
+    width: 200px;
+    display: flex;
+  }
+}
+
+/* Responsive Styles */
+
+@media (max-width: 645px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .login-form {
+    margin-top: 20px;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  .navbar a {
+    padding: 10px;
+    text-align: right;
+  }
+
+  .overlay li:hover .dropdown {
+    display: block;
+    font-size: 5px;
+  }
+
+  .menu-bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .search-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .content h1 {
+    font-size: 25px;
+  }
+  .content h1 {
+    font-size: 15px;
+  }
+  .container{
+    height: 740px;
+  }
+}
+
+@media (max-width: 640px) {
+ main{
+  height: 1900px;
+ }
+}
