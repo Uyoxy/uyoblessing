@@ -35,11 +35,11 @@ body {
       rgba(17, 17, 17, 0.5),
       rgba(17, 17, 17, 0.5)
     ),
-    url("/wall.jpg");
+    url("wall.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 900px;
+  height: 1200px;
 }
 main {
   width: 100%;
@@ -158,6 +158,7 @@ nav {
 
 .content {
   max-width: 60%;
+  
 }
 .text-span {
   color: #ff7f00;
@@ -290,7 +291,7 @@ a {
       rgba(255, 123, 0, 0.5),
       rgba(0, 123, 255, 0.5)
     ),
-    url("asset/juji.jpeg");
+    url("/wall.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -414,6 +415,9 @@ header{
     display: block;
     width: 200px;
     display: flex;
+  }
+  .content{
+    margin-top:-100px ;
   }
 }
 
